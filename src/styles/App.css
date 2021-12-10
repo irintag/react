@@ -6,7 +6,29 @@
 
 #root {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    padding: 20px;
+    background-color: gray;
+    width: 100%;
+    display: flex;
     justify-content: center;
+    margin-bottom: 30px;
+}
+
+.navbar__link {
+    color: #fff;
+    margin: 0 5px;    
 }
 
 .App {
@@ -43,3 +65,24 @@
     transition: all 500ms ease-in;
 }
   
+.page__wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.page {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+.page__current {
+    background-color: gray;
+    color: #fff;
+}
+
